@@ -16,8 +16,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<div>{message}</div>} />
-      <Route path="*" element={<div>Error: no code or invalid url.</div>} />
+      <Route path="*" element={<div>{message}</div>} />
     </Routes>
   );
 }
