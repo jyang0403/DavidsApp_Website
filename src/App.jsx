@@ -9,15 +9,15 @@ function App() {
 
   var message = "";
   if (code == null) {
-    message = "Error: invalid code";
+    message = "Error: invalid url or no code";
   } else {
     message = "Your code is " + code + ". Return to the app and enter it.";
   }
 
   return (
     <Routes>
-      <Route path="/" element={<div>hi</div>} />
-      <Route path="*" element={<div>hey</div>} />
+      <Route path="/" element={<div>{message}</div>} />
+      <Route path="*" element={<div>Error: no code or invalid url.</div>} />
     </Routes>
   );
 }
