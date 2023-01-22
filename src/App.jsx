@@ -16,9 +16,10 @@ function App() {
 
   return (
     <Routes>
-        <Route path="/" element={<div>hi</div>} />
+      <Route path="/" element={<div>hi</div>} />
+      <Route path="*" element={<div>hey</div>} />
     </Routes>
-  )
+  );
 }
 
 function parseCode(url) {
